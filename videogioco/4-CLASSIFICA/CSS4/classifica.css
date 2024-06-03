@@ -1,0 +1,62 @@
+* {
+    font-family: 'Wellfleet';
+  }
+  
+  @font-face {
+    font-family: 'Wellfleet';
+    src: url(../FONT/Wellfleet-Regular.ttf);
+  }
+  
+body {
+    padding: 0;
+    background-image: url("../IMAGES4/sfondo.jpeg");
+    background-size: cover; /* Imposta la dimensione dell'immagine in modo che copra lo sofndo */
+    background-position: center; /* Imposta la posizione dell'immagine al centro */
+    overflow: hidden; /* Rimuove le barre di scorrimento laterali */
+    height: 100vh;
+
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Aggiunge una leggera ombra per migliorare la profondità */
+}
+
+#classifica {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#classifica p {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#classifica p:nth-child(1) {
+    background-color: gold;
+    /* Colore del primo posto */
+}
+
+#classifica p:nth-child(2) {
+    background-color: silver;
+    /* Colore del secondo posto */
+}
+
+#classifica p:nth-child(3) {
+    background-color: #dd8023;
+    /* Colore del terzo posto (bronzo) */
+}
+
+#norindo {
+    position: absolute;
+    left: 10px; /* Posizione dell'immagine rispetto al bordo sinistro */
+    bottom: 0%; /* Posizione dell'immagine rispetto al bordo superiore */
+    width: 30%; /* Larghezza dell'immagine */
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+}

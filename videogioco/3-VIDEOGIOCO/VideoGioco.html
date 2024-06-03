@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Titolo della pagina -->
+    <title>ECO-Logic Adventures</title>
+
+    <!-- Icona del gioco -->
+    <link rel="icon" href="./IMAGES3/FaviconECO-LogicAdventures.png">
+
+    <!-- Informazioni sul sito e sull'autore -->
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Gioco sostenibile, ecologico, sul riciclo dei rifiuti presenti nel fiume Bacchiglione di Vicenza">
+    <meta name="keywords" content="HTML, CSS, JS, riciclo, ecologia, OndeReEcoVI, Fiume Bacchiglione Vicenza">
+    <meta name="author" content="Manuel Dalla Santa & Luca Zenere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Collegamento del stylesheet -->
+    <link rel="stylesheet" href="./CSS3/ecovi3.css">
+</head>
+
+
+<body id="body" class="body">
+
+    <!-- Corpo della pagina -->
+    <div id="center" class="center">
+        <!-- Creazione di una box (punti-container) -->
+        <div id="colsx" class="colsx">
+            <div id="logo-container" class="logo-container">
+                <img id="logo" class="img-logo" src="./IMAGES3/LogoECO-LogicAdventuresNBG.png" 
+                alt="Logo">
+                </div>
+
+        <div id="punteggio" class="punteggio">
+            <!-- Titolo container -->
+            <h2><b>Quantita' raccolte</b></h2>
+            <!-- Container punti secco -->
+            <div class="contenitoreSkillBar">
+                <span>Secco</span>
+                <div class="skill-bar-wrapper">
+                    <div id="skill-bar-1" class="skill-bar"></div>
+                </div>
+                <span id="counter-1" class="counter">0</span>
+            </div>
+
+            <!-- Container punti cartone -->
+            <div class="contenitoreSkillBar">
+                <span>Cartone</span>
+                <div class="skill-bar-wrapper">
+                    <div id="skill-bar-2" class="skill-bar"></div>
+                </div>
+                <span id="counter-2" class="counter">0</span>
+            </div>
+
+            <!-- Container punti plastica -->
+            <div class="contenitoreSkillBar">
+                <span>Plastica</span>
+                <div class="skill-bar-wrapper">
+                    <div id="skill-bar-3" class="skill-bar"></div>
+                </div>
+                <span id="counter-3" class="counter">0</span>
+            </div>
+
+            <!-- Container punti vetro -->
+            <div class="contenitoreSkillBar">
+                <span>Vetro</span>
+                <div class="skill-bar-wrapper">
+                    <div id="skill-bar-5" class="skill-bar"></div>
+                </div>
+                <span id="counter-5" class="counter">0</span>
+            </div>
+
+            <!-- Container punteggio totale -->
+            <div id="contenitorePunteggio">
+                <h2>Punteggio totale: </h2>
+                <span id="total-score">0</span>
+            </div>
+        </div>
+        </div>
+
+        <!--Creazione di una box (contenitoreGioco)-->
+        <div class="contenitoreGioco" id="contenitoreGioco"></div>
+        <!--Creazione di una box pulsanti-->
+        <div class="contenitore-pulsanti" id="contenitore-pulsanti">
+            <div class="centered buttons-container"></div>
+                    <button id="suono" class="round-button">
+                        <img src="./IMAGES3/volume.png" alt="Attiva/Disattiva Suono">
+                    </button>
+                    <button id="tutorial" class="round-button">
+                        <img src="./IMAGES3/tutorial.png" alt="Tutorial">
+                    </button>
+                    <div id="contatoreMosseInutili">Mosse inutili: <span id="counter-value">0</span></div>
+                </div>
+                
+        </div>
+    </div>
+
+    <!-- Script associato alla pagina -->
+    <script src="./JS3/ecovi3.js"></script>
+</body>
+
+</html>

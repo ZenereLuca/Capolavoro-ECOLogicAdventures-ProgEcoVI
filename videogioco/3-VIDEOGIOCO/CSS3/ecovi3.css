@@ -1,0 +1,286 @@
+* {
+  font-family: 'Wellfleet';
+}
+@font-face {
+  font-family: 'Wellfleet';
+  src: url(../FONT/Wellfleet-Regular.ttf);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Aggiunge una leggera ombra */
+  background-image: url('../IMAGES3/sfondo.svg');
+  background-size: cover; /* Imposta la dimensione dell'immagine in modo che copra lo sfondo */
+  background-position: center; /* Imposta la posizione dell'immagine al centro */
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.body
+{
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center
+{
+  width: 1100px;
+  height: 700px;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0 auto;
+}
+#colsx {
+  align-items: center;
+  text-align: center; /* Allinea il punteggio al centro */
+  padding: 25px;
+  margin: 0 auto;
+  width: 270px;
+}
+
+.logo-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Allinea il punteggio al centro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Aggiunge una leggera ombra */
+  padding: 5px;
+  margin: 0 auto;
+  width: 256px;
+}
+#logo {
+  width: 230px; /* Imposta la larghezza */
+  height: 100px; /* Imposta l'altezza */
+  font-size: 14px; /* Imposta la dimensione del testo */
+  line-height: 50px; 
+  text-align: center; /* Centra il testo orizzontalmente */
+  margin: 10px; 
+  align-items: center;
+  justify-content: center;
+}
+/*Stile del titolo*/
+
+#punteggio {
+  width: 250px;
+  padding: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 50px;
+  background-color: rgba(250, 235, 215, 0.427);
+  align-items: center;
+  text-align: center; /* Allinea il punteggio al centro */
+  border: solid white 3px;
+  border-style: groove;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+
+}
+
+#punteggio h2 {
+  margin: 5px;
+  display: inline-block;
+  
+}
+
+.contenitoreGioco {
+  max-width: 800px;
+  margin: 25px;
+  padding: 25px;
+  display: grid;
+  background-color: rgba(250, 235, 215, 0.427);
+  border: solid white 3px;
+  border-style: groove;
+  border-radius: 10px; /* Aggiunge un bordo arrotondato */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+  gap: 10px; /* Aggiunge spazio tra le celle della griglia */
+  justify-content: center; /* Allinea la griglia al centro orizzontalmente */
+  align-items: center; /* Allinea la griglia al centro verticalmente */
+
+}
+
+.cellaGioco {
+  border: 1px solid #ccc; /* Aggiunge un bordo alle celle della griglia */
+  border-radius: 5px; /* Rende il bordo arrotondato */
+  overflow: hidden; /* Nasconde eventuali contenuti che fuoriescono dalle celle */
+  background-color: #fff; /* Imposta un colore di sfondo per il bottone */
+  width: 80px; /* Imposta la larghezza desiderata */
+  height: 80px; /* Imposta l'altezza desiderata */
+  padding: 0; 
+  margin: 0; 
+}
+
+.cellaGioco img {
+  width: 100%; /* Imposta la larghezza dell'immagine al 100% della larghezza della cella */
+  height: 100%; /* Imposta l'altezza dell'immagine al 100% dell'altezza della cella */
+  object-fit: cover; /* Fa in modo che l'immagine si adatti completamente alla dimensione della cella */
+  cursor: pointer; 
+
+}
+
+/* Aggiunge un effetto di pressione quando i pulsanti sono attivati */
+.cellaGioco:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contenitoreSkillBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skill-bar-wrapper {
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #4caf50;
+}
+
+.counter {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+#contenitorePunteggio {
+  margin-top: 20px;
+}
+
+#total-score {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#contenitore-pulsanti {
+  min-width: 150px;
+  background-color: rgba(250, 235, 215, 0.427);
+  align-items: center;
+  text-align: center; /* Allinea il punteggio al centro */
+  border-style: groove;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+  padding: 25px;
+  margin: 25px;
+}
+
+input[type="text"],
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+button {
+  background-color: #344adb;
+  color: white;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+#suono,
+#tutorial {
+  border-radius: 50%; /* Rende il pulsante rotondo */
+  width: 50px; /* Imposta la larghezza */
+  height: 50px; /* Imposta l'altezza */
+  font-size: 14px; /* Imposta la dimensione del testo */
+  line-height: 50px; /* Centra il testo verticalmente */
+  text-align: center; /* Centra il testo orizzontalmente */
+  margin: 10px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto; /* Imposta l'altezza automaticamente rispetto alla larghezza */
+}
+
+/* Aggiunge stile per i bottoni rotondi */
+.round-button {
+  border-radius: 50%; /* Rende il pulsante rotondo */
+  width: 50px; /* Imposta la larghezza */
+  height: 50px; /* Imposta l'altezza */
+}
+
+/* Posiziona i bottoni rotondi affiancati */
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+/* Aggiunge stile per le immagini all'interno dei bottoni */
+.round-button img {
+  width: 30px; /* Imposta la larghezza dell'immagine */
+  height: 30px; /* Imposta l'altezza dell'immagine */
+  margin-left: -10px; 
+}
+
+.buttons-container {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}

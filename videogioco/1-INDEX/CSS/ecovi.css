@@ -1,0 +1,105 @@
+/*Seguente font per l'intera pagina*/
+* {
+  font-family: 'Wellfleet';
+}
+
+/*Collego il font della pagina*/
+@font-face {
+    font-family: 'Wellfleet';
+    src: url(../FONT/Wellfleet-Regular.ttf);
+}
+
+/*Stile del body*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../IMAGES/sfondo.svg');
+    background-size: cover; /* Imposta la dimensione dell'immagine in modo che copra lo sfondo*/
+    background-position: center; /* Imposta la posizione dell'immagine al centro */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Stile del logo*/
+#logo {
+    width: 365px; /* Imposta la larghezza */
+    height: 160px; /* Imposta l'altezza */
+    line-height: 50px; /* Centra il testo verticalmente */
+    margin: 15px;
+    text-align: center; /* Centra il testo orizzontalmente */
+    align-items: center;
+    justify-content: center;
+}
+
+/*Stile del contenitore*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/*Stile pulsanti e degli input*/
+input[type="text"],
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+button {
+    background-color: #344adb;
+    color: white;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Aggiunge stile per i bottoni rotondi */
+.round-button {
+    border-radius: 50%; /* Rendi il pulsante rotondo */
+    width: 50px; /* Imposta la larghezza */
+    height: 50px; /* Imposta l'altezza */
+}
+
+/* Posiziona i bottoni rotondi affiancati */
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+/* Aggiunge stile per le immagini all'interno dei bottoni */
+.round-button img {
+    width: 30px; /* Imposta la larghezza dell'immagine */
+    height: 30px; /* Imposta l'altezza dell'immagine */
+    margin-left: -10px; 
+}
+.buttons-container {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Dichiarazione lingua usata dal sito -->
+
+<head>
+    <!-- Titolo della pagina -->
+    <title>ECO-Logic Adventures</title>
+
+    <!-- Icona del gioco -->
+    <link rel="icon" href="./IMAGES/FaviconECO-LogicAdventures.png">
+
+    <!-- Informazioni sul sito e sull'autore -->
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Gioco sostenibile, ecologico, sul riciclo dei rifiuti presenti nel fiume Bacchiglione di Vicenza">
+    <meta name="keywords" content="HTML, CSS, JS, riciclo, ecologia, Fiume Bacchiglione Vicenza">
+    <meta name="author" content="Manuel Dalla Santa & Luca Zenere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Collegamento del stylesheet -->
+    <link rel="stylesheet" href="./CSS/ecovi.css">
+</head>
+
+<body>
+    <!-- Logo del gioco -->
+    <img src="./IMAGES/LogoECO-LogicAdventuresNBG.png" id="logo" class="logo" alt="Logo di ECO-Logic Adventures">
+
+    <!-- Contenitore del corpo della pagina -->
+    <div class="container">
+        <div class="centered">
+            <input type="text" id="usernameInput" placeholder="Inserisci il tuo nickname">
+            <div class="centered buttons-container">
+                <button id="I/OSuono" class="round-button">
+                    <img src="./IMAGES/volume.png" alt="Attiva/Disattiva suono">
+                </button>
+                <button id="tutorial" class="round-button">
+                    <img src="./IMAGES/tutorial.png" alt="Tutorial">
+                </button>
+            </div>
+            <button id="facile">Livello Facile</button>
+            <button id="medio">Livello Medio</button>
+            <button id="difficile">Livello Difficile</button>
+            <button id="classifica">Classifica</button>
+
+        </div>
+    </div>
+
+    <!-- Inserimento della musica di sottofondo -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="./EFX/backgroundmusic.m4a" type="audio/mpeg">
+        Audio non supportato
+    </audio>
+
+    <!-- Script associato alla pagina -->
+    <script src="./JS/ecovi.js"></script>
+</body>
+
+</html>
